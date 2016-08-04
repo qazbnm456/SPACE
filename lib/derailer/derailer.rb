@@ -961,8 +961,7 @@ class Analyzer
 
     results = Hash.new
     saves = Hash.new
-    controller_klasses = ActionController::Base.descendants
-    controller_klasses = [NotesController] # remove
+    controller_klasses = ActionController::Base.descendants 
     log "here are the controllers and their actions that I know of"
 
     controller_klasses.each do |c|
