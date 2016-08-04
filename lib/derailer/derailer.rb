@@ -1222,7 +1222,7 @@ class Analyzer
       end
 
       WEBrick::HTTPUtils::DefaultMimeTypes['rhtml'] = 'text/html'
-      server = WEBrick::HTTPServer.new :Port => 8001, :DocumentRoot => root, :RequestCallback => cb
+      server = WEBrick::HTTPServer.new :Port => 8000, :DocumentRoot => root, :RequestCallback => cb
 
       trap 'INT' do server.shutdown end
 
